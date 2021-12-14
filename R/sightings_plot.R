@@ -53,7 +53,7 @@ top10 %>%
   labs(x = "", y = "",
        caption = "To avoid overestimation, counts are limited by locality to the maximum single observation count in a day.\n" %+%
          "Graph by Spencer Schien (@MrPecners) | Data from eBird Basic Dataset",
-       title = "WI Counties with the most Snowy Owl Sightings in 2020",
+       title = "WI counties with the most snowy owl sightings in 2020",
        subtitle = "Portage and Douglas counties outstrip the rest")
 
 ggsave("graphics/top_10_counties.jpeg", device = "jpeg")
@@ -68,7 +68,7 @@ ebird_data %>%
   summarise(n = sum(as.numeric(n))) %>%
   st_as_sf(coords = c("longitude", "latitude"), crs = st_crs(4326)) %>%
   ggplot() +
-  geom_sf(data= wi_trim, color = "white", size = .1) +
+  geom_sf(data= wi_trim, color = "white", size = .1, fill = "grey75") +
   geom_sf(data = wi_trim %>% filter(NAME %in% top10$county),
           color = "red", size = .5, fill = NA) +
   geom_sf(aes(size = n), alpha = .25, color = "red") +
