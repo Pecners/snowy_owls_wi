@@ -56,6 +56,8 @@ top10 %>%
        title = "WI Counties with the most Snowy Owl Sightings in 2020",
        subtitle = "Portage and Douglas counties outstrip the rest")
 
+ggsave("graphics/top_10_counties.jpeg", device = "jpeg")
+
 
 ebird_data %>%
   filter(lubridate::year(observation_date) == 2020) %>%
@@ -78,10 +80,10 @@ ebird_data %>%
         plot.subtitle = element_text(size = 14, hjust = 1, margin = margin(t = 45, b = -30)),
         plot.caption.position = "plot",
         plot.caption = element_text(hjust = .5, margin = margin(t = 5, b = 5))) + 
-  labs(title = "Snowy Owl Sightings in 2020",
-       subtitle = "Top ten counties in red",
+  labs(title = "Where to see snowy owls in Wisconsin",
+       subtitle = "2020 top ten counties in red",
        size = "Locality Annual Total",
        caption = "To avoid overestimation, counts are limited by locality to the maximum single observation count in a day.\n" %+%
          "Graph by Spencer Schien (@MrPecners) | Data from eBird Basic Dataset")
 
-       
+ggsave("graphics/snowy_sightings_map_2020.jpeg", device = "jpeg")
