@@ -53,7 +53,7 @@ top10 %>%
   labs(x = "", y = "",
        caption = "To avoid overestimation, counts are limited by locality to the maximum single observation count in a day.\n" %+%
          "Graph by Spencer Schien (@MrPecners) | Data from eBird Basic Dataset",
-       title = "WI counties with the most snowy owl sightings in 2020",
+       title = "Wisconsin counties with the most snowy owl sightings in 2020",
        subtitle = "Portage and Douglas counties outstrip the rest")
 
 ggsave("graphics/top_10_counties.jpeg", device = "jpeg")
