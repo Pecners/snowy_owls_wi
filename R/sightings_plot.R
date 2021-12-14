@@ -49,7 +49,9 @@ top10 %>%
         text = element_text(family = "ks"),
         plot.title.position = "plot",
         plot.caption.position = "plot",
-        plot.caption = element_text(hjust = 0)) + 
+        plot.caption = element_text(hjust = 0, size = 12),
+        plot.title = element_text(size = 18),
+        plot.subtitle = element_text(size = 14)) + 
   labs(x = "", y = "",
        caption = "To avoid overestimation, counts are limited by locality to the maximum single observation count in a day.\n" %+%
          "Graph by Spencer Schien (@MrPecners) | Data from eBird Basic Dataset",
@@ -76,10 +78,11 @@ ebird_data %>%
   theme(legend.position = "bottom",
         text = element_text(family = "ks"),
         plot.title.position = "plot",
-        plot.title = element_text(size = 18, hjust = 1, margin = margin(t = 10, b = -40)),
-        plot.subtitle = element_text(size = 14, hjust = 1, margin = margin(t = 45, b = -30)),
+        plot.title = element_text(size = 22, hjust = 1, margin = margin(t = 10, b = -40)),
+        plot.subtitle = element_text(size = 16, hjust = 1, margin = margin(t = 45, b = -30)),
         plot.caption.position = "plot",
-        plot.caption = element_text(hjust = .5, margin = margin(t = 5, b = 5))) + 
+        plot.caption = element_text(hjust = .5, margin = margin(t = 5, b = 5),
+                                    size = 12)) + 
   labs(title = "Where to see snowy owls in Wisconsin",
        subtitle = "2020 top ten counties in red",
        size = "Locality Annual Total",
