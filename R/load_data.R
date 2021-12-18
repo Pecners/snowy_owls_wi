@@ -32,3 +32,19 @@ ebird_data <- loon_in %>%
   auk_filter(file = loon_out, overwrite = TRUE) %>% 
   # 4. read text file into r data frame
   read_ebd()
+
+# WI Common Loons
+loon_in <- "data/ebd_US-MI_snoowl1_relOct-2021.txt"
+# output text file
+loon_out <- "data/snowys_mi.txt"
+
+ebird_data <- loon_in %>% 
+  # 1. reference file
+  auk_ebd() %>% 
+  # 2. define filters
+  auk_species(species = "Snowy Owl") %>% 
+  auk_country(country = "US") %>% 
+  # 3. run filtering
+  auk_filter(file = loon_out, overwrite = TRUE) %>% 
+  # 4. read text file into r data frame
+  read_ebd()
