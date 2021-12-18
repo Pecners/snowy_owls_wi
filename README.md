@@ -4,6 +4,8 @@ Based on all the social media posts and eBird reported sightings, I feel like I'
 
 As it turns out, Milwaukee is not a bad spot to be on the lookout for a snowy owl. That said, it seems my odds would greatly improve if I were to take a jaunt up to Portage or Douglas county.
 
+# Wisconsin
+
 ## Sightings
 
 ![Snowy owl sightings in 2020](graphics/snowy_sightings_map_2020.jpeg)
@@ -11,3 +13,14 @@ As it turns out, Milwaukee is not a bad spot to be on the lookout for a snowy ow
 ## Top 10 Counties
 
 ![Top 10 Wisconsin counties](graphics/top_10_counties.jpeg)
+
+# Michigan
+
+## Sightings
+
+![Snowy owl sightings in 2020](graphics/snowy_sightings_map_mi_2020.jpeg)
+
+## Top 10 Counties
+
+![Top 10 Michigan counties](graphics/top_10_counties_mi_snowys.jpeg)
+
