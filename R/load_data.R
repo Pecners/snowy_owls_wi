@@ -2,7 +2,7 @@ library(tidyverse)
 library(auk)
 
 # WI Snowy Owls
-f_in <- "data/ebd_US-WI_snoowl1_relOct-2021.txt"
+f_in <- "data/ebd_US-WI_snoowl1_relNov-2021.txt"
 # output text file
 f_out <- "data/snowys.txt"
 
